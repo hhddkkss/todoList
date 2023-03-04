@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 onclick="autoInput()"><span></span>ToDo List</h1>
+    </header>
+
+    <form id="form1">
+      <input type="text" name="todo" placeholder="Input Todo Item" autofocus />
+      <input
+        type="number"
+        name="month"
+        placeholder="M"
+        min="1"
+        max="12"
+        required
+      />
+      <input
+        type="number"
+        name="date"
+        placeholder="D"
+        min="1"
+        max="31"
+        required
+      />
+      <button>ADD INTO LIST</button>
+    </form>
+
+    <section id="info"></section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
